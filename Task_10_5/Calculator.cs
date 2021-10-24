@@ -33,7 +33,7 @@ namespace Task_10_5
                 }
                 if (!isCorrect)
                 {
-                logger.WriteError($"Failed to create Calculator with given input {input}");
+                    logger.WriteError($"Failed to create Calculator with given input {input}");
                     throw new ArgumentException($"Не получается интерпретирвоать выражение: {input}");
                 }
             logger.WriteInfo("Calculator Created");
